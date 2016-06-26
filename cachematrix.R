@@ -1,8 +1,8 @@
-## These functions take a square matrix and returns its inverse
+## These functions take a square matrix and return its inverse
 ## Once it is called, the given matrix and its inverse are cached
 ## If the given matrix is changed, it is cached again, and so its inverse
 
-## The first function is a list of functions to handle the cache
+## The first function is a list of functions to handle the caching
 ## It also returns the given matrix and its inverse
 makeCacheMatrix <- function(x = matrix()) {
       s <- NULL
@@ -20,7 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## The second function checks if the inverse of the given matrix has been
-## calculated, if so it just return it, if not it calculates it, and returns it
+## calculated, if so it just returns it, if not it calculates and returns it
 cacheSolve <- function(x, ...) {
       s <- x$getsolve()
       if(!is.null(s)) {
